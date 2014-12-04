@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.27/angular.min.js"></script>
+</head>
+
+<body ng-init="title='Angular'; items = [0,1,2,3];">
+    hello {{title}}
+
+    <div ng-repeat="item in items" ng-hide="hide">
+        {{item}}
+
+    </div>
+    <button ng-click="hide=!hide">Toggle Show/Hide</button>
+    <button ng-click="items[items.length] = items.length">Add New Item</button>
+
+</body>
+</html>
